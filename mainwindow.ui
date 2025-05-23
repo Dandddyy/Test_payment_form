@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f0f0f0;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>411</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ffffff;
+        alternate-background-color: #f9f9f9;
+        font-size: 14px;
+        color: #333;
+    }
+
+    QHeaderView::section {
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+    }
+
+    QTableWidget::item {
+        padding: 6px;
+        border: none;
+    }
+
+    QTableWidget::item:selected {
+        background-color: #cdeffd;
+        color: #000;
+        border-radius: 5px;
+    }
+
+    QTableCornerButton::section {
+        background-color: #f0f0f0;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <column>
+     <property name="text">
+      <string>Назва</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>240</red>
+       <green>232</green>
+       <blue>230</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Кількість</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ціна</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="labelTotal">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    color: #4a494a;</string>
+    </property>
+    <property name="text">
+     <string>Загальна сума: 0.0 грн</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPayed">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    color: #4a494a;</string>
+    </property>
+    <property name="text">
+     <string>Сплачено: 0.0 грн</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelToPay">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    color: #4a494a;
+    font:bold;</string>
+    </property>
+    <property name="text">
+     <string>До сплати: 0.0 грн</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelChange">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    color: #4a494a;
+    font:bold;</string>
+    </property>
+    <property name="text">
+     <string>Решта: 0.0 грн</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelThank">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>390</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: &quot;Segoe UI&quot;;
+    font-size: 14pt;
+    color: #4a494a;
+    font:bold;</string>
+    </property>
+    <property name="text">
+     <string>Дякую за покупку!</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
